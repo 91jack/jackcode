@@ -1,0 +1,238 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>layout 后台大布局 - Layui</title>
+<link rel="stylesheet" href="static/lib/layui/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">layui 后台布局</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">首页</a></li>
+      <li class="layui-nav-item"><a href="">系统</a></li>
+      <li class="layui-nav-item"><a href="">统计</a></li>
+      <li class="layui-nav-item"><a href="">运营</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item"><a href="">课堂</a></li>
+      <li class="layui-nav-item"><a href="">财务</a></li>
+      <li class="layui-nav-item"><a href="">商城</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+    <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+    
+      	<!--首页配置-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">首页</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">基本信息</a></dd>
+	            <dd><a href="javascript:;">群发信息</a></dd>
+	            <dd><a href="javascript:;">数据备份</a></dd>
+	            <dd><a href="javascript:;">操作日志</a></dd>
+	            <dd><a href="javascript:;">登录日志</a></dd>
+	            <dd><a href="javascript:;">附件管理</a></dd>
+	            <dd><a href="javascript:;">缓存清理</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+      	<!--系统配置-->
+	    <ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">系统配置</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">站点配置</a></dd>
+	            <dd><a href="javascript:;">首页配置</a></dd>
+	            <dd><a href="javascript:;">注册配置</a></dd>
+	            <dd><a href="javascript:;">头部导航配置</a></dd>
+	            <dd><a href="javascript:;">底部导航配置</a></dd>
+	            <dd><a href="javascript:;">评论开关配置</a></dd>
+	            <dd><a href="javascript:;">网站SEO配置</a></dd>
+	            <dd><a href="javascript:;">短信接口配置</a></dd>
+	            <dd><a href="javascript:;">邮件配置</a></dd>
+	            <dd><a href="javascript:;">微信配置</a></dd>
+	            <dd><a href="javascript:;">附件配置</a></dd>
+	            <dd><a href="javascript:;">过滤配置</a></dd>
+	            <dd><a href="javascript:;">消息配置</a></dd>
+	            <dd><a href="javascript:;">缓存配置</a></dd>
+	          </dl>
+	        </li>
+	        <li class="layui-nav-item">
+	          <a href="javascript:;">支付管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">支付宝配置</a></dd>
+	            <dd><a href="javascript:;">微信支付配置</a></dd>
+	           
+	          </dl>
+	        </li>
+	       	<li class="layui-nav-item">
+	          <a href="javascript:;">其他配置</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">第三方登录</a></dd>
+	            <dd><a href="javascript:;">广告位</a></dd>
+	          	<dd><a href="javascript:;">存储配置</a></dd>
+	            <dd><a href="javascript:;">点播配置</a></dd>
+	            <dd><a href="javascript:;">直播配置</a></dd>
+	          </dl>
+	        </li>
+	    </ul>
+      	
+      	<!--统计-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">统计管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">访问统计</a></dd>
+	            <dd><a href="javascript:;">活跃度统计</a></dd>
+	            <dd><a href="javascript:;">学员信息统计</a></dd>
+	            <dd><a href="javascript:;">订单统计</a></dd>
+	            <dd><a href="javascript:;">收益统计</a></dd>
+	            <dd><a href="javascript:;">学习记录统计</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+      	<!--运营-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">营销卡管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">积分配置规则</a></dd>
+	            <dd><a href="javascript:;">余额&积分配置</a></dd>
+	            <dd><a href="javascript:;">会员等级</a></dd>
+	            <dd><a href="javascript:;">订单统计</a></dd>
+	            <dd><a href="javascript:;">收益统计</a></dd>
+	            <dd><a href="javascript:;">学习记录统计</a></dd>
+	          </dl>
+	        </li>
+	        
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">内容管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">资讯管理</a></dd>
+	            <dd><a href="javascript:;">单页管理</a></dd>
+	            <dd><a href="javascript:;">公告管理</a></dd>
+	            <dd><a href="javascript:;">私信管理</a></dd>
+	            <dd><a href="javascript:;">反馈管理</a></dd>
+	            <dd><a href="javascript:;">系统消息管理</a></dd>
+	            <dd><a href="javascript:;">验证码管理</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      
+      	<!--用户-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">用户</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">用户管理</a></dd>
+	            <dd><a href="javascript:;">用户组管理</a></dd>
+	            <dd><a href="javascript:;">讲师认证</a></dd>
+	            <dd><a href="javascript:;">讲师管理</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+      	<!--课堂-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">课程管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="page/course/adminvideo.html">点播课管理</a></dd>
+	            <dd><a href="javascript:;">直播课管理</a></dd>
+	            <dd><a href="javascript:;">班级管理</a></dd>
+	          </dl>
+	        </li>
+	        
+	        <li class="layui-nav-item">
+	          <a class="" href="javascript:;">考试管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">分类管理</a></dd>
+	            <dd><a href="javascript:;">考点管理</a></dd>
+	            <dd><a href="javascript:;">试题管理</a></dd>
+	            <dd><a href="javascript:;">成绩管理</a></dd>
+	            <dd><a href="javascript:;">证书管理</a></dd>
+	          </dl>
+	        </li>
+	        
+	        <li class="layui-nav-item">
+	          <a class="" href="javascript:;">内容管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">问答管理</a></dd>
+	            <dd><a href="javascript:;">笔记管理</a></dd>
+	            <dd><a href="javascript:;">提问管理</a></dd>
+	            <dd><a href="javascript:;">点评管理</a></dd>
+	            <dd><a href="javascript:;">文库管理</a></dd>
+	            <dd><a href="javascript:;">分类配置</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+      	
+      	<!--财务-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">订单与账户</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">订单管理</a></dd>
+	            <dd><a href="javascript:;">积分管理</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+      	<!--商城-->
+      	<ul class="layui-nav layui-nav-tree"  lay-filter="test" style="display: none;">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">商城管理</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">商品管理</a></dd>
+	            <dd><a href="javascript:;">订单管理</a></dd>
+	            <dd><a href="javascript:;">收获地址管理</a></dd>
+	            <dd><a href="javascript:;">商品分类配置</a></dd>
+	          </dl>
+	        </li>
+      	</ul>
+      	
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <iframe onload="nof5()" id="MainIframe" name="MainIframe" scrolling="yes"  width="100%" height="100%" frameborder="0" noresize> </iframe>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script src="static/lib/layui/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
